@@ -1,8 +1,8 @@
 # Import libraries needed for our bot to work.
 # discord: Helps the bot communicate with Discord.
 # os: Allows the bot to work with our computer's environment, like files or settings.
-# random: Used to pick random jokes or messages.
-# dotenv: Loads secrets (like passwords) from a hidden file to keep them safe.
+# random: Used to pick random jokes.
+# dotenv: Loads password (token) from a hidden file to keep them safe.
 # ec2_metadata: Helps the bot get information about an AWS EC2 server.
 # googletrans: Allows the bot to translate text between languages.
 
@@ -79,7 +79,7 @@ async def on_message(message):
 
                 #Use Google Translator to translate the text.
                 translation = Translator().translate(toTranslate, dest = language)
-                #Send back the translated text.
+                #Reply with the translated text.
                 await message.channel.send(f'Your text was translated to: {translation.text}')
             except Exception as e:
                  #If translation fails, print the error in the console and notify the user.
