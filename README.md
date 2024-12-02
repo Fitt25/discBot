@@ -13,6 +13,7 @@ The purpose of this bot is to enhance the user experience in Discord servers by 
 - Text Translation: Users can input text, and the bot will translate it into a target language using an external translation API.
 
 #How It Works
+
 The bot is built with Python and uses the `discord` library to interact with Discord's API. Here’s how it functions:
 1. Set up and Authentication: The bot connects to Discord using a bot token after being added to a server.
 2. Server Information Command: Users can use the `Tell me about my server` command to receive information about the server.
